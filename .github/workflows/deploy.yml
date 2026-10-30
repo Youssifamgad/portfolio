@@ -22,6 +22,7 @@ jobs:
         run: |
           python -m zipfile -e site-content.zip _site
           cp index.html _site/index.html
+          cp social-preview-v1.jpg _site/social-preview-v1.jpg
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
